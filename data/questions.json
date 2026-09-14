@@ -1,0 +1,972 @@
+{
+  "questions": [
+    {
+      "id": "Q001",
+      "scenario": "Your team is given a new project. The goal is clear, but no one has decided how the work should be organized.",
+      "responses": [
+        {
+          "id": "A",
+          "text": "Start on the portion you understand best and coordinate when your work begins to overlap with others.",
+          "weights": {
+            "AU": 2,
+            "DS": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Start a discussion about responsibilities and help the group settle on an approach before much work begins.",
+          "weights": {
+            "SI": 2,
+            "LM": 2,
+            "AU": -1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Wait briefly to see how the group naturally organizes itself, then fill whichever role seems most useful.",
+          "weights": {
+            "SR": 2,
+            "DS": -1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Develop an initial approach yourself and bring it to the group as something they can modify.",
+          "weights": {
+            "AU": 2,
+            "LM": 1,
+            "SI": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q002",
+      "scenario": "A process you use regularly suddenly stops working during a busy period.",
+      "responses": [
+        {
+          "id": "A",
+          "text": "Try several likely fixes immediately and keep moving unless one creates a larger problem.",
+          "weights": {
+            "DS": 2,
+            "CW": 2,
+            "ET": -1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Pause, identify what changed, and gather enough information to isolate the cause before altering anything.",
+          "weights": {
+            "ET": 2,
+            "FT": 1,
+            "DS": -1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Ask someone familiar with the process what they are seeing, then troubleshoot from there.",
+          "weights": {
+            "SR": 2,
+            "AU": -1,
+            "ET": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Create a temporary workaround so the work continues, then investigate the underlying problem afterward.",
+          "weights": {
+            "DS": 2,
+            "RS": 2,
+            "CW": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q003",
+      "scenario": "Someone strongly disagrees with your recommendation in front of other people.",
+      "responses": [
+        {
+          "id": "A",
+          "text": "Explain your reasoning directly and continue defending the recommendation unless new evidence changes your mind.",
+          "weights": {
+            "CC": 2,
+            "ET": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Ask them to walk through their reasoning before deciding whether the disagreement changes anything.",
+          "weights": {
+            "ET": 2,
+            "SR": 1,
+            "CC": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Let the discussion move on for the moment and revisit the issue privately if it still matters.",
+          "weights": {
+            "CC": -2,
+            "FT": 1,
+            "EE": -1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Shift the conversation toward the shared goal and try to build a version both sides can support.",
+          "weights": {
+            "SR": 2,
+            "LM": 1,
+            "CC": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q004",
+      "scenario": "A newer teammate asks for help with something you could complete much faster yourself.",
+      "responses": [
+        {
+          "id": "A",
+          "text": "Do it with them and explain your reasoning as you go, even though it takes longer.",
+          "weights": {
+            "LM": 2,
+            "SR": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "Give them the key steps and let them try, staying available if they get stuck.",
+          "weights": {
+            "LM": 2,
+            "AU": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Complete the urgent part yourself, then explain it afterward when there is more time.",
+          "weights": {
+            "DS": 2,
+            "LM": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Point them toward the best resource and let them work through it independently.",
+          "weights": {
+            "AU": 2,
+            "LM": -1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q005",
+      "scenario": "A plan you spent a lot of time preparing is rejected.",
+      "responses": [
+        {
+          "id": "A",
+          "text": "Ask what would make it workable and start revising it while the feedback is fresh.",
+          "weights": {
+            "RS": 2,
+            "CW": 2,
+            "SR": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Take some time to process the disappointment before deciding what to do next.",
+          "weights": {
+            "EE": 1,
+            "RS": -1,
+            "DS": -1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Review the objections carefully and determine whether the original plan is still worth defending.",
+          "weights": {
+            "ET": 2,
+            "CC": 2,
+            "CW": -1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Move on quickly and build a different approach from scratch.",
+          "weights": {
+            "RS": 2,
+            "DS": 2,
+            "CW": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q006",
+      "scenario": "A group conversation is quiet and no one seems willing to start.",
+      "responses": [
+        {
+          "id": "A",
+          "text": "Open with a question that gives everyone an easy way into the discussion.",
+          "weights": {
+            "SI": 2,
+            "LM": 1,
+            "SR": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Wait; silence does not necessarily need to be filled.",
+          "weights": {
+            "SI": -2,
+            "AU": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Offer your own view first so others have something concrete to respond to.",
+          "weights": {
+            "SI": 2,
+            "CC": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Address one person you know has useful knowledge and invite their perspective.",
+          "weights": {
+            "SI": 1,
+            "SR": 2,
+            "LM": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q007",
+      "scenario": "You notice someone close to you seems upset but says they are fine.",
+      "responses": [
+        {
+          "id": "A",
+          "text": "Tell them you noticed and ask directly whether they want to talk.",
+          "weights": {
+            "SR": 2,
+            "EE": 1,
+            "SI": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Stay nearby and act normally, giving them room to bring it up themselves.",
+          "weights": {
+            "SR": 2,
+            "EE": -1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Do something practical that might make their day easier without asking for an explanation.",
+          "weights": {
+            "LM": 2,
+            "EE": -1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Accept what they said and avoid pushing unless their behavior suggests something more serious.",
+          "weights": {
+            "ET": 2,
+            "SR": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q008",
+      "scenario": "You are responsible for a decision and the available information is incomplete.",
+      "responses": [
+        {
+          "id": "A",
+          "text": "Choose the most reasonable option now and adjust later if necessary.",
+          "weights": {
+            "DS": 2,
+            "ET": -2,
+            "CW": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Delay the decision until you can reduce the biggest uncertainty.",
+          "weights": {
+            "ET": 2,
+            "DS": -2
+          }
+        },
+        {
+          "id": "C",
+          "text": "Ask several people for their perspectives, then make the call.",
+          "weights": {
+            "SR": 1,
+            "LM": 1,
+            "ET": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Choose the option with the most reversible downside so you can act without locking yourself in.",
+          "weights": {
+            "DS": 1,
+            "ET": 1,
+            "CW": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q009",
+      "scenario": "A routine that has worked for a long time is being replaced by a new system.",
+      "responses": [
+        {
+          "id": "A",
+          "text": "Learn the new system early so you can figure out how to make it useful.",
+          "weights": {
+            "CW": 2,
+            "RS": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Keep using the old method until the new one proves it is actually better.",
+          "weights": {
+            "CW": -2,
+            "ET": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "Switch when required, but preserve the parts of the old routine that still work.",
+          "weights": {
+            "CW": 0,
+            "ET": 1,
+            "RS": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Ask what problem the change is supposed to solve before deciding how much of your approach should change.",
+          "weights": {
+            "ET": 2,
+            "CW": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q010",
+      "scenario": "You make a noticeable mistake that affects other people.",
+      "responses": [
+        {
+          "id": "A",
+          "text": "Acknowledge it immediately, explain the correction, and fix what you can.",
+          "weights": {
+            "EE": 2,
+            "CC": 1,
+            "RS": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Fix the problem first and discuss it once you understand exactly what happened.",
+          "weights": {
+            "ET": 2,
+            "EE": -1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Tell the affected people, ask what they need from you, and coordinate the recovery.",
+          "weights": {
+            "SR": 2,
+            "LM": 1,
+            "EE": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Correct it quietly if possible and focus on preventing a repeat.",
+          "weights": {
+            "EE": -2,
+            "AU": 1,
+            "RS": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q011",
+      "scenario": "You are overloaded and someone asks you to take on one more task.",
+      "responses": [
+        {
+          "id": "A",
+          "text": "Say no clearly and explain what would need to move for you to take it on.",
+          "weights": {
+            "CC": 2,
+            "FT": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Accept it and reorganize your own workload to make room.",
+          "weights": {
+            "LM": 1,
+            "FT": 1,
+            "CC": -1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Ask how urgent it is and negotiate scope or timing before answering.",
+          "weights": {
+            "ET": 2,
+            "SR": 1,
+            "CC": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Take it if the person seems to need the help, even if it makes your schedule harder.",
+          "weights": {
+            "SR": 2,
+            "LM": 2,
+            "FT": -1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q012",
+      "scenario": "Two people you work with are stuck in a disagreement that is slowing everyone down.",
+      "responses": [
+        {
+          "id": "A",
+          "text": "Step in and help them identify the actual decision that needs to be made.",
+          "weights": {
+            "LM": 2,
+            "CC": 1,
+            "SI": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Let them work it out unless they specifically ask you to intervene.",
+          "weights": {
+            "AU": 1,
+            "SI": -1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Hear both sides separately before suggesting a path forward.",
+          "weights": {
+            "SR": 2,
+            "ET": 1,
+            "LM": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Set a temporary direction so work can continue and revisit the disagreement later.",
+          "weights": {
+            "DS": 2,
+            "LM": 2,
+            "FT": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q013",
+      "scenario": "You receive criticism that feels unfair.",
+      "responses": [
+        {
+          "id": "A",
+          "text": "Respond immediately and explain what you think the criticism is missing.",
+          "weights": {
+            "CC": 2,
+            "EE": 2,
+            "FT": -1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Ask for specific examples before deciding whether you agree.",
+          "weights": {
+            "ET": 2,
+            "FT": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Keep your reaction private until you have had time to think about it.",
+          "weights": {
+            "EE": -2,
+            "DS": -1,
+            "FT": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Focus on whatever part is useful and leave the rest alone.",
+          "weights": {
+            "RS": 2,
+            "FT": 2,
+            "CC": -1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q014",
+      "scenario": "A friend or coworker repeatedly asks for advice but rarely follows it.",
+      "responses": [
+        {
+          "id": "A",
+          "text": "Keep giving advice when asked; what they do with it is their choice.",
+          "weights": {
+            "LM": 2,
+            "FT": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Ask whether they actually want advice or just want someone to listen.",
+          "weights": {
+            "SR": 2,
+            "EE": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Stop offering detailed solutions unless they show they intend to act on them.",
+          "weights": {
+            "AU": 1,
+            "CC": 1,
+            "LM": -1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Tell them directly that the pattern is frustrating and ask what kind of help would be useful.",
+          "weights": {
+            "CC": 2,
+            "EE": 2,
+            "SR": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q015",
+      "scenario": "You join a group where everyone already seems to know one another.",
+      "responses": [
+        {
+          "id": "A",
+          "text": "Introduce yourself to a few people and start asking questions.",
+          "weights": {
+            "SI": 2,
+            "SR": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Stay observant until there is a natural opening to join a conversation.",
+          "weights": {
+            "SI": -1,
+            "SR": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "Find one person who seems approachable and talk mostly with them at first.",
+          "weights": {
+            "SI": 1,
+            "SR": 2
+          }
+        },
+        {
+          "id": "D",
+          "text": "Focus on the activity itself; relationships can develop if they need to.",
+          "weights": {
+            "SI": -2,
+            "AU": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q016",
+      "scenario": "A deadline is approaching and the original plan is clearly no longer realistic.",
+      "responses": [
+        {
+          "id": "A",
+          "text": "Cut lower-priority pieces and protect the most important outcome.",
+          "weights": {
+            "DS": 2,
+            "CW": 2,
+            "ET": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Push harder to complete the original plan as promised.",
+          "weights": {
+            "CC": 1,
+            "FT": 2,
+            "CW": -2
+          }
+        },
+        {
+          "id": "C",
+          "text": "Bring the problem to the group and renegotiate what success should look like.",
+          "weights": {
+            "LM": 2,
+            "SR": 1,
+            "CW": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Rebuild the plan around what can realistically be finished, even if the method changes completely.",
+          "weights": {
+            "CW": 2,
+            "RS": 2,
+            "DS": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q017",
+      "scenario": "You have been trying to solve a difficult problem alone and are making little progress.",
+      "responses": [
+        {
+          "id": "A",
+          "text": "Keep working until you have exhausted the approaches you can think of.",
+          "weights": {
+            "AU": 2,
+            "FT": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "Ask someone for help once you can clearly explain where you are stuck.",
+          "weights": {
+            "AU": 1,
+            "ET": 1,
+            "SR": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Show someone what you have so far and solve the remaining problem together.",
+          "weights": {
+            "SR": 2,
+            "AU": -1,
+            "LM": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Step away temporarily and return with a different approach before involving anyone else.",
+          "weights": {
+            "RS": 2,
+            "AU": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q018",
+      "scenario": "Someone changes plans with you at the last minute.",
+      "responses": [
+        {
+          "id": "A",
+          "text": "Adjust without much concern if the new plan still works.",
+          "weights": {
+            "CW": 2,
+            "FT": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "Ask why the change happened before deciding whether you are okay with it.",
+          "weights": {
+            "ET": 2,
+            "CW": 0
+          }
+        },
+        {
+          "id": "C",
+          "text": "Feel irritated but adapt rather than turning it into a conflict.",
+          "weights": {
+            "FT": 1,
+            "EE": -1,
+            "CW": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Say directly if the change creates a problem for you and work out another option.",
+          "weights": {
+            "CC": 2,
+            "EE": 1,
+            "SR": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q019",
+      "scenario": "You realize a person has misunderstood something you said and is now upset.",
+      "responses": [
+        {
+          "id": "A",
+          "text": "Clarify what you meant immediately, even if the conversation is uncomfortable.",
+          "weights": {
+            "CC": 2,
+            "EE": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "First acknowledge how it sounded from their perspective, then explain what you meant.",
+          "weights": {
+            "SR": 2,
+            "EE": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "Give them some space and revisit it after emotions settle.",
+          "weights": {
+            "FT": 1,
+            "DS": -1,
+            "EE": -1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Focus on repairing the practical problem rather than debating the wording.",
+          "weights": {
+            "RS": 1,
+            "LM": 1,
+            "EE": -1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q020",
+      "scenario": "You are asked to lead something you have never done before.",
+      "responses": [
+        {
+          "id": "A",
+          "text": "Accept and learn what you need as you go.",
+          "weights": {
+            "LM": 2,
+            "DS": 2,
+            "RS": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Accept, but first find someone experienced who can help you understand the risks.",
+          "weights": {
+            "LM": 1,
+            "ET": 2,
+            "SR": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Prefer to contribute without leading until you have more experience.",
+          "weights": {
+            "LM": -2,
+            "ET": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Build a basic plan, assign the first steps, and refine the approach once work starts.",
+          "weights": {
+            "LM": 2,
+            "DS": 1,
+            "AU": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q021",
+      "scenario": "A person you care about is making a choice you strongly disagree with.",
+      "responses": [
+        {
+          "id": "A",
+          "text": "Tell them exactly why you disagree, even if they may not like hearing it.",
+          "weights": {
+            "CC": 2,
+            "EE": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "Ask questions until you understand why the choice makes sense to them.",
+          "weights": {
+            "SR": 2,
+            "ET": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "Make your concern known once, then respect that the decision is theirs.",
+          "weights": {
+            "CC": 1,
+            "AU": 1,
+            "FT": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Offer practical help that reduces the risks without trying to control the decision.",
+          "weights": {
+            "LM": 2,
+            "SR": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q022",
+      "scenario": "After a stressful failure, you have another important task the next day.",
+      "responses": [
+        {
+          "id": "A",
+          "text": "Return to your normal routine and focus on the next task.",
+          "weights": {
+            "RS": 2,
+            "FT": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "Review what went wrong while it is fresh, then make a specific adjustment for tomorrow.",
+          "weights": {
+            "RS": 2,
+            "ET": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "Talk it through with someone you trust before trying to reset.",
+          "weights": {
+            "EE": 2,
+            "SR": 2,
+            "RS": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Give yourself time to feel bad about it, then re-engage when the emotion has settled.",
+          "weights": {
+            "EE": 2,
+            "RS": 1,
+            "DS": -1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q023",
+      "scenario": "You discover a rule is producing a bad outcome in an unusual situation.",
+      "responses": [
+        {
+          "id": "A",
+          "text": "Follow the rule for now and raise the issue through the proper channel.",
+          "weights": {
+            "ET": 1,
+            "CC": -1,
+            "CW": -1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Use judgment and make an exception if you can justify it.",
+          "weights": {
+            "CC": 2,
+            "AU": 2,
+            "CW": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "Ask whoever owns the rule how they want the unusual case handled.",
+          "weights": {
+            "SR": 1,
+            "ET": 2,
+            "AU": -1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Find a solution that stays technically within the rule while avoiding the bad outcome.",
+          "weights": {
+            "AU": 2,
+            "CW": 1,
+            "ET": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q024",
+      "scenario": "A group you are part of succeeds after a difficult stretch.",
+      "responses": [
+        {
+          "id": "A",
+          "text": "Celebrate openly and make sure people know their work mattered.",
+          "weights": {
+            "EE": 2,
+            "LM": 2,
+            "SI": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Feel satisfied but prefer to move quietly into whatever comes next.",
+          "weights": {
+            "EE": -2,
+            "DS": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Call out the specific people or decisions that made the recovery possible.",
+          "weights": {
+            "LM": 2,
+            "SR": 2
+          }
+        },
+        {
+          "id": "D",
+          "text": "Enjoy the result, then immediately start thinking about how to make the next attempt easier.",
+          "weights": {
+            "RS": 2,
+            "ET": 1,
+            "DS": 1
+          }
+        }
+      ]
+    }
+  ]
+}
