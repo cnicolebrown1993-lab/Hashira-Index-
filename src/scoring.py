@@ -1,14 +1,4 @@
 import json
-with open("data/questions.json", "r", encoding="utf-8") as file:
-    data = json.load(file)
-
-questions = data["questions"]
-
-def apply_weights(scores, weights):
-    for dimension, value in weights.items():
-        scores[dimension] += value
-
-    return scores
 
 DIMENSIONS = [
     "SI",
@@ -24,14 +14,41 @@ DIMENSIONS = [
     "CW"
 ]
 
-test_scores = {dimension: 0 for dimension in DIMENSIONS}
 
-test_answers = ["B", "D", "A"]
+def load_questions():
+    with open("data/questions.json", "r", encoding="utf-8") as file:
+        data = json.load(file)
 
-for question, answer in zip(questions, test_answers):
-    for response in question["responses"]:
-        if response["id"] == answer:
-            apply_weights(test_scores, response["weights"])
+    return data["questions"]
 
-print(test_scores)
 
+def apply_weights(scores, weights):
+    for dimension, value in weights.items():
+        scores[dimension] += value
+
+    return scores
+
+
+def score_assessment(questions, answers):
+    scores = {dimension: 0 for dimension in DIMENSIONS}
+
+    for question, answer in zip(questions, answers):
+        for response in question["responses"]:
+            if response["id"] == answer:
+                apply_weights(scores, response["weights"])
+                break
+
+    return scores
+
+
+if __name__ == "__main__":
+    questions = load_questions()
+
+    test_answers = ["B", "D", "A"]
+
+    raw_scores = score_assessment(
+        questions,
+        test_answers
+    )
+
+    print(raw_scores)
